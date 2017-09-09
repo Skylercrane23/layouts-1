@@ -1,4 +1,6 @@
 @import 'reset.scss';
+
+$blue: #2aabe2;
 // ----- Default Styles -----
 body {
     font-family: 'nunito';
@@ -38,7 +40,7 @@ p {
     url('../img/hero_background.jpg') center no-repeat;
     background-size: cover;
     position: relative;
-    border-top: solid 10px #2aabe2;
+    border-top: solid 10px $blue;
 
     .dm-logo {
         position: absolute;
@@ -80,7 +82,7 @@ p {
                 display: inline-block;
                 margin-left: 10px;
                 margin-bottom: 0;
-                color: #2aabe2;
+                color: $blue;
             }
         }
     }
@@ -122,25 +124,207 @@ p {
 // SIDEBAR SECTION
 .sidebar {
     width: 300px;
-    height: 100%;
+    height: calc(100vh - 20px);
     float: left;
+    border-right: 2px solid #DDDDDD;
+    position: sticky;
+    top: 20px;
     
-    img.dm-logo {
-        margin-top: 50px;
-        margin-bottom: 100px;
-        position: relative;
-        z-index: 2;
-        height: 50px;
-        left: 30px;
-        top: 30px;
+    .dm-logo {
+        margin-top: 39.5px;
+        margin-bottom: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+        height: 44px;
     }
     ul.navigation-links {
-        margin-left: 20px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+
+        li {
+           
+            a {
+                text-decoration: none;
+                list-style: none;  
+                font-size: 16px;
+                color: black;  
+                line-height: 50px;
+                text-transform: uppercase;
+                font-weight: 700;
+                width: 250px;
+            }
+            &:hover {
+                a {
+                    color: $blue;
+                }
+            }
+        }
     }
-   
 }
 
 //WHATMAKES SECTION
-.whatmakes {
-    width: calc(100% - 300px);
-}
+.main-content {
+    //width: calc(100% - 300px);
+    height: auto;
+
+    .content {
+        padding: 100px 100px 100px 400px;
+        h1 {
+            color: $blue;
+            font-weight: 600;
+        }
+        .whatmakes-item {
+            margin-bottom: 20px;
+
+            .whatmakes-logo {
+                float: left;
+            }
+            h3 {
+                font-size: 18px;
+                color: black;  
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding: 20px 0 25px 90px;
+            }
+            p {
+                padding: 0 180px 20px 90px;
+                line-height: 1.4;
+            }
+        }// END WHATMAKES-LOGO
+       
+    }// END CONTENT 
+
+    .slider {
+        //background-color: #dddddd;
+        margin: 0px 0px 0px 200px;
+        padding: 0 0 0 100px;
+
+        .slider-container {
+            background: url('https://i.ytimg.com/vi/_vPxFJxYtmc/maxresdefault.jpg');
+            background-size: cover;
+            height: 600px;
+            background-color: #dddddd;
+            padding: 0 0 0 100px;
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: stretch;
+
+            .text-container {
+               text-align: center;
+               margin: auto;
+               width: 600px;
+               h1 {
+                   color: white;
+               }
+               p {
+                   color: white;
+                   font-size: 22px;
+                   line-height: 1.4;
+                   margin-bottom: 20px;
+               }
+               .play-section {
+                    margin-top: 85px;
+
+                    img {
+                        float: left;
+                        position: relative;
+                        left: 212px;
+                        top: -10px;
+                    }
+                    p {
+                        color: $blue;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                    }
+               }
+            }// END TEXT-CONTAINER
+        }// END SLIDER-CONTAINER
+        
+    }// END SLIDER
+
+    .our-course {
+        background-color: $blue;
+        margin: 0px 0px 0px 300px;
+        padding: 100px 0 100px 100px;
+        h1 {
+            color: white;
+            font-weight: 600;
+        }
+        .ourcourse-item {
+           // margin-bottom: 20px;
+
+            .ourcourse-logo {
+                float: left;
+            }
+            h3 {
+                font-size: 18px;
+                color: white;  
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding: 20px 0 25px 90px;
+            }
+            p {
+                padding: 0 180px 20px 90px;
+                line-height: 1.4;
+                color: white;
+                margin-bottom: 20px;
+            }
+            button {
+                color: white;
+                background: transparent;
+                padding: 10px 15px;
+                text-transform: uppercase;
+                margin: 0 180px 20px 90px;
+                border: 2px solid white;
+                font-size: 16px;
+                font-weight: 300;
+                &:hover {
+                    background-color: white;
+                    color: $blue;
+                }
+            }
+        }// END WHATMAKES-LOGO
+       
+    }// END CONTENT 
+
+    // JOIN SECTION
+    .join {
+        margin: 0px 0px 0px 300px;
+        padding: 50px 50px 50px 100px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+
+        p {
+            font-size: 18px;
+            text-transform: uppercase;
+            line-height: 1.5;
+            text-align: center;
+            font-weight: 700;
+        }
+        span.blue {
+            color: $blue;
+            @extends p;
+        }
+        div.icons {
+            margin-top: 30px;
+            a {
+                letter-spacing: 1px;
+                img {
+                    margin: 0 20px;
+                }
+            }
+           
+        }// ICONS
+    }// END JOIN SECTION
+    
+}// END WHATMAKES
