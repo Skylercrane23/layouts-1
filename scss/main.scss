@@ -34,8 +34,8 @@ p {
 // HERO SECTION
 .hero {
     background: linear-gradient(
-       rgba(0,0,0, .5),
-       rgba(0,0,0, .5),
+       rgba(0,0,0, .6 ),
+       rgba(0,0,0, .6),
     ), 
     url('../img/hero_background.jpg') center no-repeat;
     background-size: cover;
@@ -161,6 +161,7 @@ p {
         }
     }
 }
+
 
 //WHATMAKES SECTION
 .main-content {
@@ -326,5 +327,112 @@ p {
            
         }// ICONS
     }// END JOIN SECTION
+
+    // STAYINTOUCH SECTION
+    .stayintouch {
+        background-color: #252525;
+        margin: 0px 0px 0px 300px;
+        padding: 100px 0 100px 100px;
+
+        div.email  {
+            padding: 0px 100px;
+            width: 450px;
+            h1 {
+                color: white;
+            }
+            p {
+                color: white;
+                width: 450px;
+                margin-bottom: 40px;
+                line-height: 1.5;
+            }
+            form {
+                
+                input.input-style {
+                    color: #252525;
+                    width: 450px;
+                    float: left;
+                    margin-bottom: 30px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    padding: 15px;
+                    border-radius: 1px;
+                    border: none;
+                    font-size: 16px;
+                }
+                *::-webkit-input-placeholder {
+                    color: $blue;
+                }
+                .form-btn {
+                    
+                    color: $blue;
+                    background: transparent;
+                    padding: 10px 15px;
+                    text-transform: uppercase;
+                    border: 2px solid $blue;
+                    font-size: 16px;
+                    font-weight: 300;
+                    //margin-bottom: 40px;
+                    &:hover {
+                        background-color: $blue;
+                        color: #252525;
+                    }
+                }
+            }
+        }
+
+        
+        
+    }
+    //END STAYINTOUCH
+
+    .footer-section {
+        margin: 0px 0px 0px 300px;
+        padding: 100px 0 100px 0px;
+
+        .footer-container {
+            padding: 0px 50px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: baseline;
+            align-content: center;
+
+            ul {
+                .blue {
+                    color: $blue;
+                }
+
+                li {
+                    
+                     a {
+                         text-decoration: none;
+                         list-style: none;  
+                         font-size: 16px;
+                         color: black;  
+                         line-height: 50px;
+                         text-transform: uppercase;
+                         font-weight: 700;
+                         width: 250px;
+                         
+                     }
+                     &:hover {
+                         a {
+                             color: $blue;
+                         }
+                     }
+                 }
+            }
+        }
+    }
+
+    .footer-2017 {
+        border-top: 2px solid #ddd;
+        margin: 0px 0px 0px 300px;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 5px 20px;
+    }
     
 }// END WHATMAKES

@@ -65,7 +65,7 @@ h4 {
   line-height: 1.1; }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero_background.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero_background.jpg") center no-repeat;
   background-size: cover;
   position: relative;
   border-top: solid 10px #2aabe2; }
@@ -268,5 +268,73 @@ h4 {
         letter-spacing: 1px; }
         .main-content .join div.icons a img {
           margin: 0 20px; }
+  .main-content .stayintouch {
+    background-color: #252525;
+    margin: 0px 0px 0px 300px;
+    padding: 100px 0 100px 100px; }
+    .main-content .stayintouch div.email {
+      padding: 0px 100px;
+      width: 450px; }
+      .main-content .stayintouch div.email h1 {
+        color: white; }
+      .main-content .stayintouch div.email p {
+        color: white;
+        width: 450px;
+        margin-bottom: 40px;
+        line-height: 1.5; }
+      .main-content .stayintouch div.email form input.input-style {
+        color: #252525;
+        width: 450px;
+        float: left;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 15px;
+        border-radius: 1px;
+        border: none;
+        font-size: 16px; }
+      .main-content .stayintouch div.email form *::-webkit-input-placeholder {
+        color: #2aabe2; }
+      .main-content .stayintouch div.email form .form-btn {
+        color: #2aabe2;
+        background: transparent;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        border: 2px solid #2aabe2;
+        font-size: 16px;
+        font-weight: 300; }
+        .main-content .stayintouch div.email form .form-btn:hover {
+          background-color: #2aabe2;
+          color: #252525; }
+  .main-content .footer-section {
+    margin: 0px 0px 0px 300px;
+    padding: 100px 0 100px 0px; }
+    .main-content .footer-section .footer-container {
+      padding: 0px 50px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: baseline;
+      align-content: center; }
+      .main-content .footer-section .footer-container ul .blue {
+        color: #2aabe2; }
+      .main-content .footer-section .footer-container ul li a {
+        text-decoration: none;
+        list-style: none;
+        font-size: 16px;
+        color: black;
+        line-height: 50px;
+        text-transform: uppercase;
+        font-weight: 700;
+        width: 250px; }
+      .main-content .footer-section .footer-container ul li:hover a {
+        color: #2aabe2; }
+  .main-content .footer-2017 {
+    border-top: 2px solid #ddd;
+    margin: 0px 0px 0px 300px;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 5px 20px; }
 
 /*# sourceMappingURL=main.css.map */
