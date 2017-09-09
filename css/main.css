@@ -1,3 +1,146 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'nunito'; }
+
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 10px 0; }
+
+h3 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1;
+  margin: 20px 0 10px 0; }
+
+h4 {
+  font-size: 18px;
+  line-height: 1.1; }
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero_background.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+  border-top: solid 10px #2aabe2; }
+  .hero .dm-logo {
+    position: absolute;
+    z-index: 2;
+    height: 50px;
+    left: 30px;
+    top: 30px; }
+  .hero .hero-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch; }
+    .hero .hero-container .hero-text {
+      margin-top: 110px;
+      color: white;
+      text-align: center; }
+      .hero .hero-container .hero-text h3 {
+        letter-spacing: .2px; }
+      .hero .hero-container .hero-text .watchourvideo {
+        margin-top: 125px; }
+      .hero .hero-container .hero-text img {
+        position: relative;
+        top: 15px; }
+      .hero .hero-container .hero-text p {
+        text-transform: uppercase;
+        line-height: 40px;
+        display: inline-block;
+        margin-left: 10px;
+        margin-bottom: 0;
+        color: #2aabe2; }
+
+.companies {
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: solid 10px #2aabe2; }
+  .companies h3 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px; }
+  .companies .companies-container {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch; }
+    .companies .companies-container img {
+      height: 50px; }
+
+.sidebar {
+  width: 300px;
+  height: 100%;
+  float: left; }
+  .sidebar img.dm-logo {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 2;
+    height: 50px;
+    left: 30px;
+    top: 30px; }
+  .sidebar ul.navigation-links {
+    margin-left: 20px; }
+
+.whatmakes {
+  width: calc(100% - 300px); }
 
 /*# sourceMappingURL=main.css.map */
